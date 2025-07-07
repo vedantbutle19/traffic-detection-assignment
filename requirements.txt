@@ -1,0 +1,23 @@
+# Supervision library used for visualizing object detections
+# Includes utilities like BoxAnnotator, LabelAnnotator, and plotting
+supervision>=0.6.0
+
+# Inference SDK for downloading and using pre-trained YOLOv8 models
+# Includes the get_model() method and image inference pipeline
+inference>=0.3.3
+
+# OpenCV for computer vision tasks such as drawing rectangles and putting text
+# You used it for adding bounding boxes and overlay text on the image
+opencv-python>=4.7.0
+
+# NumPy for numerical operations and efficient array masking
+# Used here to filter detections based on class IDs (vehicle_mask)
+numpy>=1.23.0
+
+# Pillow is often used internally for image loading/saving and may be required
+# by the inference or visualization libraries
+Pillow>=9.0.0
+
+# requests is used if you fetch images directly from the internet using raw URLs
+# (Not explicitly used in your code, but may be needed if you replace load_image_bgr)
+requests>=2.28.0
